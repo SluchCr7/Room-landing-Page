@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Header w-full">
+    <div class="header_body relative flex flex-row items-center w-full">
+      <div class="Nav flex flex-row items-center gap-6 w-[50%]">
+        <img src="images/logo.svg" alt="">
+        <ul class="flex flex-row items-center gap-6">
+          <li><a href="">Home</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <i class="material-icons" id="menu">menu</i>
+      </div>
+      <div class="content flex flex-row items-center" id="content">
+        <div class="image_left w-[52%] relative">
+          <img class="w-full" src="images/desktop-image-hero-1.jpg" alt="" id="img">
+          <div class="none">
+            <i class="material-icons arrowLeft absolute left-0 top-[50%] text-7xl">keyboard_arrow_left</i>
+            <i class="material-icons arrowRight absolute right-0 top-[50%] text-7xl">keyboard_arrow_right</i>
+          </div>
+        </div>  
+        <div class="image_right flex flex-col items-start w-[48%] pl-[5%] relative">
+          <h1 class="text-6xl font-bold w-[50%]">Discover innovative ways to decorate</h1>
+          <p class="text-2xl w-[60%] text-gray-400 py-[10px]">We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.</p>
+          <button class="flex flex-row items-center gap-3">
+            <a href="">Shop now</a>
+            <i class="material-icons">trending_flat</i>
+          </button>
+        </div>  
+        <div class="arrows flex flex-row justify-center gap-8 items-center w-[14%] p-[30px] bg-black absolute bottom-[0rem] left-[52%]">
+          <div>
+            <i class="fa-solid fa-angle-left text-white text-6xl arrowLeft" id="arrowLeft"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-angle-right text-white text-6xl arrowRight" id="arrowRight"></i>
+          </div>
+        </div>
+      </div>
+      <div class="nav_links hidden flex-row items-center w-[100%] m-auto fixed top-0 left-0 right-0 p-[30px] bg-white justify-between">
+        <i class="material-icons" id="close">close</i>
+        <ul class="flex flex-row items-center gap-7">
+          <li><a href="">Home</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+  </div>
+  </div>
+  <div class="body flex flex-row items-center w-full">
+    <img class="w-[33%]" src="images/image-about-dark.jpg" alt="">
+    <div class="text flex flex-col items-start w-[60%] px-[5%]">
+      <h1 class="text-4xl tracking-[.9rem] font-extrabold">About our furniture</h1>
+      <p class="text-2xl text-gray-400 pt-[10px]">Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary.</p>
+    </div>
+    <img class="w-[33%]" src="images/image-about-light.jpg" alt="">
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
