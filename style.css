@@ -125,6 +125,14 @@ body{
                 width: 100% !important;
             }
         }
+        .image_right{
+            h1{
+                width: 80% !important;
+            }
+            p{
+                width: 70% !important;
+            }
+        }
     }
     .body{
         width: 100% !important;
@@ -135,6 +143,35 @@ body{
     .arrows{
         display: none !important;
     }
+}
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .header_body{
+        width: 100% !important;
+        .image_left{
+            img{
+                height: 60vh;
+                width: 100% !important;
+            }
+        }
+        .image_right{
+            h1{
+                width: 80% !important;
+            }
+            p{
+                width: 70% !important;
+            }
+        }
+    }
+    .body{
+        width: 100% !important;
+        img{
+            height: 37vh;
+        }
+    }
+    .arrows{
+        /* display: none !important; */
+    }
+    
 }
 .Nav i{
     font-size: 2.5rem;
